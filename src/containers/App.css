@@ -1,0 +1,55 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+.App-logo {
+  height: 80px;
+}
+.App-header {
+  height: 150px;
+  padding: 20px;
+}
+
+.App-PokeTeam {
+  overflow-x: hidden;
+}
+
+.App-PokeTeam ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.App-PokeTeam li {
+  display: inline-block;
+  padding: 5vh;
+}
+
+.App-PokeTeam-SlotImage {
+  max-width: 10vw;
+}
+
+.App-Pokedex ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.App-Pokedex li {
+  display: inline-block;
+  padding: 5vh;
+}
+
+.App-Pokedex-Image {
+  max-width: 10vw;
+}
+
+.App-PokemonList {
+  background-color: lightgrey;
+}
+
+.App-PokemonList--Selected {
+  background-color: green;
+}
