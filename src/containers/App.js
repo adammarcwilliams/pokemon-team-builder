@@ -51,6 +51,10 @@ class App extends Component {
     let pokemonID = e.target.id
 
     let mutatedArray = pokeTeamArray
+    if (mutatedArray.includes(pokemonID)) {
+      let index = mutatedArray.indexOf(pokemonID)
+      mutatedArray.splice(index, 1, '000')
+    }
     mutatedArray.splice(currentPokeBall, 1, pokemonID)
     this.setState({pokeTeamArray: mutatedArray})
   }
