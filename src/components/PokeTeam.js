@@ -3,7 +3,7 @@ import PokeSlot from '../components/PokeSlot.js'
 
 const PokeTeam = ({pokeTeamArray, handleSlotClick}) => {
   return (
-    <div className='App-PokeTeam'>
+    <div id='slider' className='App-PokeTeam'>
       <ul>
         <PokeSlot id='0' type='fire' pokeTeamSlot={pokeTeamArray[0]} handleSlotClick={handleSlotClick}/>
         <PokeSlot id='1' type='fire' pokeTeamSlot={pokeTeamArray[1]} handleSlotClick={handleSlotClick}/>
