@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Hammer from 'react-hammerjs'
 import Header from '../components/Header.js'
 import PokeTeam from '../components/PokeTeam.js'
 import Pokedex from '../components/Pokedex.js'
@@ -60,18 +59,11 @@ class App extends Component {
     this.setState({pokeTeamArray: mutatedArray})
   }
 
-  handlePan (e) {
-    console.log(e)
-    let scrollamount = 0
-    scrollamount = scrollamount + (-1 * e.deltaX)
-    document.getElementById('slider').scrollLeft += scrollamount
-  }
-
   render () {
     return (
       <div className='App'>
         <Header />
-        <Hammer onPan={this.handlePan}><PokeTeam pokeTeamArray={this.state.pokeTeamArray} handleSlotClick={this.handleSlotClick}/></Hammer>
+        <PokeTeam pokeTeamArray={this.state.pokeTeamArray} handleSlotClick={this.handleSlotClick}/>
         { this.state.pokedexIsOpen
           ? <Pokedex
             pokeTeamArray={this.state.pokeTeamArray}
